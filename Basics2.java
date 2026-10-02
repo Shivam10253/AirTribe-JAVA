@@ -10,17 +10,17 @@ class Basics2 {
     // }
 
     // Method overloading
-    public static int add(int a, int b) {
-        return 10;
-    }
+    // public static int add(int a, int b) {
+    //     return 10;
+    // }
 
-    public static double add(double a, double b) {
-        return 11;
-    }
+    // public static double add(double a, double b) {
+    //     return 11;
+    // }
 
-    public static long add(long a, long b) {
-        return 12;
-    }
+    // public static long add(long a, long b) {
+    //     return 12;
+    // }
     
     
     public static void main(String[] args) {
@@ -46,9 +46,9 @@ class Basics2 {
         // calling the function
         // printTable(num);
         
-        System.out.println(add(1,2));
-        System.out.println(add(1.0,2.0));
-        System.out.println(add(1L,2L));
+        // System.out.println(add(1,2));
+        // System.out.println(add(1.0,2.0));
+        // System.out.println(add(1L,2L));
 
 
 
