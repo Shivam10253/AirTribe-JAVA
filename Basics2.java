@@ -54,7 +54,6 @@ class Basics2 {
 
 
 
-
         sc.close();
     }
 }
