@@ -1,3 +1,5 @@
+package Arrays;
+
 public class arrayBasics {
     public static void main(String[] args) {
 
@@ -21,8 +23,13 @@ public class arrayBasics {
         // System.out.println("Last element: " + marks[marks.length-1]); 
         
         // print the whole array with using loops to avoid repetitions
-        for (int i = 0; i < marks.length; i++) {
-            System.out.println(marks[i]);
+        // for (int i = 0; i < marks.length; i++) {
+        //     System.out.println(marks[i]);
+        // }
+
+        // For-each loop
+        for (int num : marks) {
+            System.out.println("Marks = " + num);
         }
 
 
