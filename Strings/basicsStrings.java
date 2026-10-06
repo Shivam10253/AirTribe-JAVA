@@ -12,9 +12,16 @@ public class basicsStrings {
         String name = sc.nextLine();
 
         // To print the element of String.
-        for (int i = 0; i < name.length(); i++) {
-            System.out.println(name.charAt(i));
-        }
+        // for (int i = 0; i < name.length(); i++) {
+        //     System.out.println(name.charAt(i));
+        // }
+
+        // Substring - part of string
+        // System.out.println(name.substring(1)); // (1 to n)
+        // System.out.println(name.substring(1,5)); // (start:1 to end:n-1)
+        // System.out.println(name.substring(1,name.length()));
+
+        
         
 
         // System.out.println(name.length());
