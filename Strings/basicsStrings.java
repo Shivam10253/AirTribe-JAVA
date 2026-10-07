@@ -29,6 +29,10 @@ public class basicsStrings {
         
         // String a = "Hello";
         // String b = "Hello1";
+
+        // String a = new String("Hello"); // I am Explicitly asking Java to create String objects.
+        // String b = new String("Hello");
+
         // System.out.println(a == b); // true, because it checks the reference point to the same object.
         // System.out.println(a.equals(b)); // true, because it checks whether the variables hold same value/contents.
 
