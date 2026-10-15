@@ -12,7 +12,9 @@ public class SmallestNumber {
         // System.out.println(Integer.MIN_VALUE); // In java, that's how Smallest Integer value you can get
         // System.out.println(Integer.MAX_VALUE); // In java, that's how Largest Integer value you can get
 
-        int min = Integer.MAX_VALUE;
+        // int min = Integer.MAX_VALUE;
+        int min = num % 10;
+        num = num / 10;
 
         while (num > 0) {
 
