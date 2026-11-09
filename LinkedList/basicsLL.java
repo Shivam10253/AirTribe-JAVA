@@ -19,7 +19,7 @@ public class basicsLL {
         Node c = new Node(9);
         Node d = new Node(8);
         Node e = new Node(16);
-        // 5 -> 3 -> 9 -> 8 -> 16
+        // 5 -> 3 -> 9 -> 8 -> 16 [This is what we want.]
 
         a.next = b; // 5 -> 3  9 8 16
         // System.out.println(a.next); // LinkedList.basicsLL$Node@251a69d7
@@ -28,6 +28,12 @@ public class basicsLL {
         // System.out.println(b.data);
         // System.out.println(a.next.data);
 
+        b.next = c; // 5 -> 3 -> 9 8 16
+        c.next = d; // 5 -> 3 -> 9 -> 8 16
+        d.next = e; // 5 -> 3 -> 9 -> 8 -> 16
+        e.next = null;
+        System.out.println(d.next.data);
+        System.out.println(e.next.data);
 
 
 
