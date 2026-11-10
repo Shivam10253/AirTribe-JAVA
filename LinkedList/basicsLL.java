@@ -31,10 +31,28 @@ public class basicsLL {
         b.next = c; // 5 -> 3 -> 9 8 16
         c.next = d; // 5 -> 3 -> 9 -> 8 16
         d.next = e; // 5 -> 3 -> 9 -> 8 -> 16
-        e.next = null;
-        System.out.println(d.next.data);
-        System.out.println(e.next.data);
+        // System.out.println(d.next.data);
+        // System.out.println(e.next);
 
+        // System.out.println(a.data);
+        // System.out.println(a.next.data);
+        // System.out.println(a.next.next.data);
+        // System.out.println(a.next.next.next.data);
+        // System.out.println(a.next.next.next.next.data);
+
+        // Node temp = a;
+        // for (int i = 0; i < 5; i++) { // we use for-loop because we know the no. of elements
+        //     System.out.print(temp.data + " ");
+        //     temp = temp.next;
+        // }
+
+
+        // we use while-loop because we dont know how many times we have to iterate
+        Node temp = a;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
 
 
 
