@@ -1,6 +1,17 @@
 package LinkedList;
 
 public class basicsLL {
+
+    // creating a method to display a linkedlist
+    public static void displayLL(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+    }
+
+    // creating a Node Class
     public static class Node{
         int data; // value
         Node next; // address of next node
@@ -19,6 +30,7 @@ public class basicsLL {
         Node c = new Node(9);
         Node d = new Node(8);
         Node e = new Node(16);
+        Node f = new Node(58);
         // 5 -> 3 -> 9 -> 8 -> 16 [This is what we want.]
 
         a.next = b; // 5 -> 3  9 8 16
@@ -31,6 +43,9 @@ public class basicsLL {
         b.next = c; // 5 -> 3 -> 9 8 16
         c.next = d; // 5 -> 3 -> 9 -> 8 16
         d.next = e; // 5 -> 3 -> 9 -> 8 -> 16
+
+        e.next = f;
+
         // System.out.println(d.next.data);
         // System.out.println(e.next);
 
@@ -48,13 +63,14 @@ public class basicsLL {
 
 
         // we use while-loop because we dont know how many times we have to iterate
-        Node temp = a;
-        while (temp != null) {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
+        // Node temp = a;
+        // while (temp != null) {
+        //     System.out.print(temp.data + " ");
+        //     temp = temp.next;
+        // }
 
 
+        displayLL(a); // a is our head node.
 
 
 
